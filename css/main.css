@@ -14,17 +14,13 @@
 body {
     font-size: 16px;
     line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */
-    ;
-    color: /* #xxxxxx */
-    ;
+    font-family: "Playfair Dislay", serif;
+    color: hotpink;
 }
 
 h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */
-    ;
-    color: /* #xxxxxx */
-    ;
+    font-size: 20.rem;
+    color: rgb(0, 255, 191);
 }
 
 h2 {
@@ -39,8 +35,7 @@ main,
 footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */
-    ;
+    max-width: 690px;
 }
 
 header,
@@ -53,8 +48,7 @@ footer a {
 }
 
 header img {
-    width: /*  */
-    ;
+    width: 300px;
     height: auto;
     float: right;
 }
