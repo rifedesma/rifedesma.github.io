@@ -19,8 +19,9 @@ body {
 }
 
 h1 {
+    font-family: "Playfair Display", serif;
     font-size: 35.rem;
-    color: rgb(0, 255, 191);
+    color: white;
 }
 
 h2 {
@@ -46,7 +47,7 @@ footer a {
 }
 
 header img {
-    width: 300px;
+    width: 200px;
     height: auto;
     float: right;
 }
