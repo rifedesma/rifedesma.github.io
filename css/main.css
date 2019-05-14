@@ -20,12 +20,12 @@ body {
 
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: 35.rem;
+    font-size: 35rem;
     color: white;
 }
 
 h2 {
-    font-size: 20.rem;
+    font-size: 20rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -53,5 +53,5 @@ header img {
 }
 
 footer {
-    font-size: 3.rem;
+    font-size: 3rem;
 }
