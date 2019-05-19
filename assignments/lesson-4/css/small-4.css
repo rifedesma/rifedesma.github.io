@@ -1,0 +1,12 @@
+body {
+    width: 360px;
+}
+
+body h1 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #78b638;
+}
+
+header {
+    background-color: #2e2d2c;
+}
