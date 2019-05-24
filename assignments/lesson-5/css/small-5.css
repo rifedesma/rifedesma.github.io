@@ -1,0 +1,82 @@
+/*set page to a mobile size and center content*/
+
+body {
+    width: 100%;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 1.25em;
+    background-color: #2e2d2c;
+    text-align: center;
+}
+
+body h1 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #78b638;
+    font-size: 2em;
+}
+
+
+/*Change padding so that the logo lines up with the title*/
+
+header img {
+    padding-top: -1.25em;
+    padding-left: 1.875em;
+    width: 2.5em;
+    float: left;
+}
+
+.logo {
+    width: 21.875em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav {
+    width: 100%;
+    background-color: #78b638;
+}
+
+
+/*set margin and padding to 0 to help center the nav. Get rid of default styling.*/
+
+header nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+header nav ul li {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .current {
+    text-align: center;
+    background-color: #2e2d2c;
+    width: 100%;
+    padding-top: .625em;
+    padding-bottom: .625em;
+}
+
+#town-pic {
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}

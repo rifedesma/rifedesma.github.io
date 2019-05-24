@@ -1,7 +1,7 @@
 /*set page to a mobile size and center content*/
 
 body {
-    max-width: 500px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     color: white;
     margin-left: auto;
@@ -23,10 +23,16 @@ body h1 {
 /*Change padding so that the logo lines up with the title*/
 
 header img {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: -20px;
+    padding-left: 30px;
     width: 40px;
     float: left;
+}
+
+.logo {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header nav {
@@ -38,6 +44,7 @@ header nav {
 /*set margin and padding to 0 to help center the nav. Get rid of default styling.*/
 
 header nav ul {
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -59,8 +66,7 @@ header nav ul li a {
 nav .current {
     text-align: center;
     background-color: #2e2d2c;
-    padding-left: 155px;
-    padding-right: 151px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
