@@ -2,7 +2,6 @@
 
 body {
     width: 100%;
-    min-width: 320px;
     font-family: 'Roboto', sans-serif;
     color: white;
     margin-left: auto;
@@ -26,15 +25,15 @@ body h1 {
 
 header img {
     padding-top: -1.25em;
-    padding-left: 1.875em;
     width: 2.5em;
     float: left;
 }
 
 .logo {
-    width: 21.875em;
+    width: 20.800em;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 header nav {
@@ -79,4 +78,19 @@ nav .current {
 
 main h1 {
     text-align: center;
+}
+
+.weatherNow {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    padding: 5px;
+    background-color: #78b638;
+    text-align: center;
+    width: 12.5em;
+    opacity: .9;
+}
+
+span {
+    color: yellow;
 }
