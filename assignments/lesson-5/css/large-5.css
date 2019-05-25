@@ -15,18 +15,24 @@
         width: 12.5em;
         opacity: .9;
     }
-    article {
-        margin-top: 5em;
-    }
     .forecast {
+        position: static;
+        visibility: visible;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5em;
+        padding: 5px;
     }
     .forecast img {
-        width: 75%;
+        width: 25%;
         margin-left: auto;
         margin-right: auto;
+    }
+    article {
+        margin-top: 3em;
+    }
+    #fireworks {
+        float: left;
+        margin-right: 25px;
     }
 }
