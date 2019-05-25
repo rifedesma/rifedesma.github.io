@@ -1,6 +1,7 @@
 /*set page to a mobile size and center content*/
 
 body {
+    min-width: 320px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -8,16 +9,23 @@ body {
     margin-right: auto;
 }
 
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #78b638;
+}
+
+
+/*Style header*/
+
 header {
     padding-top: 1.25em;
     background-color: #2e2d2c;
     text-align: center;
-}
-
-body h1 {
-    font-family: 'Kodchasan', sans-serif;
-    color: #78b638;
-    font-size: 2em;
 }
 
 
@@ -72,6 +80,12 @@ nav .current {
     padding-bottom: .625em;
 }
 
+
+/*start styling main*/
+
+
+/*Make sure the town image extends the entire width of the page*/
+
 #town-pic {
     width: 100%;
 }
@@ -79,6 +93,12 @@ nav .current {
 main h1 {
     text-align: center;
 }
+
+
+/*Style Weather Summary box*/
+
+
+/*set position to absolute in order to overlap with town pick. Override heading default color*/
 
 .weatherNow {
     position: absolute;
@@ -91,6 +111,36 @@ main h1 {
     opacity: .9;
 }
 
-span {
+.weatherNow h3 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+
+/*color the current stats yellow*/
+
+.weatherNow span {
     color: yellow;
+}
+
+
+/*style article*/
+
+article {
+    margin-top: 10em;
+    color: black;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+
+/*make the image extend the full width of the parent element-the article.*/
+
+article img {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
