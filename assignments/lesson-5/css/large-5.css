@@ -30,9 +30,15 @@
     }
     article {
         margin-top: 3em;
+        text-align: left;
     }
     #fireworks {
         float: left;
         margin-right: 25px;
+    }
+    #town-pic {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
 }
