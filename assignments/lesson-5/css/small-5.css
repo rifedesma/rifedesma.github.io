@@ -32,7 +32,6 @@ header {
 /*Change padding so that the logo lines up with the title*/
 
 header img {
-    padding-top: -1.25em;
     width: 2.5em;
     float: left;
 }
@@ -74,11 +73,41 @@ header nav ul li a {
 }
 
 nav .current {
+    font-size: 150%;
+    font-weight: bold;
     text-align: center;
-    background-color: #2e2d2c;
     width: 100%;
     padding-top: .625em;
     padding-bottom: .625em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #2e2d2c;
+}
+
+
+/* selected link */
+
+a:active {
+    color: white;
 }
 
 
