@@ -165,7 +165,7 @@ main h1 {
 
 article {
     text-align: center;
-    margin-top: 10em;
+    margin-top: 5em;
     color: black;
     width: 75%;
     margin-right: auto;
@@ -178,7 +178,6 @@ article {
 /*make the image extend the full width of the parent element-the article.*/
 
 article img {
-    width: 15em;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

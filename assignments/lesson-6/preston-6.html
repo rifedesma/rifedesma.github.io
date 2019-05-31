@@ -27,7 +27,7 @@
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="preston-5.html" class="current">Preston</a>
+                    <a href="preston-6.html" class="current">Preston</a>
                 </li>
                 <li>
                     <a href="">Soda Springs</a>
@@ -48,7 +48,12 @@
 
     <main>
         <h1>Preston, Idaho</h1>
-        <img src="images/town-pic.jpg" alt="Preston" id="town-pic">
+
+        <picture>
+            <source media="(max-width: 425px)" srcset="images/small-hero.jpeg">
+            <source media="(min-width: 426px)" srcset="images/large-hero.jpeg">
+            <img src="images/small-hero.jpeg" alt="Preston" id="town-pic">
+        </picture>
         <div class="weatherNow">
             <h3>Weather Summary</h3>
             <p>
@@ -64,7 +69,10 @@
             <img src="images/forecast.jpg" alt="5 Day Forecast">
         </div>
         <article>
-            <img src="images/fire-work.jpg" alt="fireworks" id="fireworks">
+            <picture>
+                <source media="(min-width: 760px) and (max-width: 1020px)" srcset="images/large-fire-work.jpg">
+                <img src="images/small-fire-work.jpg" alt="fireworks" id="fireworks">
+            </picture>
             <div id="articleText">
                 <h3>Preston Fireworks Spectacular!</h3>
                 <p><i>By idahohighcountry.org</i></p>
