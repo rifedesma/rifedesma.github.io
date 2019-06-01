@@ -22,47 +22,50 @@
         <p><i>Bringing You The Most Accurate Forecast</i> </p>
 
         <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="preston-6.html" class="current">Preston</a>
-                </li>
-                <li>
-                    <a href="">Soda Springs</a>
-                </li>
-                <li>
-                    <a href="">Fish Haven</a>
-                </li>
-                <li>
-                    <a href="">Storm Center</a>
-                </li>
-                <li>
-                    <a href="">Gallery</a>
-                </li>
-            </ul>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <li>
+                <ul id="primaryNav" class="hide">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="preston-6.html" class="current">Preston</a>
+                    </li>
+                    <li>
+                        <a href="">Soda Springs</a>
+                    </li>
+                    <li>
+                        <a href="">Fish Haven</a>
+                    </li>
+                    <li>
+                        <a href="">Storm Center</a>
+                    </li>
+                    <li>
+                        <a href="">Gallery</a>
+                    </li>
+                </ul>
         </nav>
 
     </header>
 
     <main>
         <h1>Preston, Idaho</h1>
-
-        <picture>
-            <source media="(max-width: 425px)" srcset="images/small-hero.jpeg">
-            <source media="(min-width: 426px)" srcset="images/large-hero.jpeg">
-            <img src="images/small-hero.jpeg" alt="Preston" id="town-pic">
-        </picture>
-        <div class="weatherNow">
-            <h3>Weather Summary</h3>
-            <p>
-                Currently: <span>Sunny</span>
-                <br> High: <span>76&deg;</span>
-                <br> Windchill: <span>78&deg;</span>
-                <br> Humidity: <span>69%</span>
-                <br> Wind Speed: <span>5 mph</span>
-            </p>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 425px)" srcset="images/small-hero.jpeg">
+                <source media="(min-width: 426px)" srcset="images/large-hero.jpeg">
+                <img src="images/small-hero.jpeg" alt="Preston" id="town-pic">
+            </picture>
+            <div class="weatherNow">
+                <h3>Weather Summary</h3>
+                <p>
+                    Currently: <span>Sunny</span>
+                    <br> High: <span>76&deg;</span>
+                    <br> Windchill: <span>78&deg;</span>
+                    <br> Humidity: <span>69%</span>
+                    <br> Wind Speed: <span>5 mph</span>
+                </p>
+            </div>
         </div>
         <div class="forecast">
             <h2>5 Day Forecast</h2>
@@ -106,6 +109,7 @@
         <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230</p>
     </footer>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

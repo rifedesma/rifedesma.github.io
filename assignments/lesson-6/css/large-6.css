@@ -1,14 +1,20 @@
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
+    nav ul.hide {
+        display: block;
+    }
     nav li {
         display: inline-block;
         padding: 2em;
     }
+    .container {
+        position: relative;
+    }
     .weatherNow {
         position: absolute;
-        top: 25.25em;
-        left: 3.125em;
+        top: 100px;
+        left: 50px;
         padding: 5px;
         background-color: #78b638;
         text-align: center;

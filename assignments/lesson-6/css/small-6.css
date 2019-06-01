@@ -49,10 +49,41 @@ header img {
     text-align: center;
 }
 
+header nav button {
+    background-color: #78b638;
+    border: 1px solid #78b638;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    color: white;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    outline: none;
+    list-style-type: none;
+}
+
+button:hover {
+    color: #2e2d2c;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 header nav {
     width: 100%;
     background-color: #78b638;
     color: white;
+    list-style-type: none;
+}
+
+
+/* Media Query for medium + screens */
+
+@media only screen and (min-width: 769px) {
+    button {
+        display: none;
+    }
+}
+
+nav ul.hide {
+    display: none;
 }
 
 
@@ -62,7 +93,6 @@ header nav ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -137,9 +167,13 @@ main h1 {
 
 /*set position to absolute in order to overlap with town pick. Override heading default color*/
 
+.container {
+    position: relative;
+}
+
 .weatherNow {
     position: absolute;
-    top: 500px;
+    top: 100px;
     left: 50px;
     padding: 5px;
     background-color: #78b638;
@@ -165,7 +199,7 @@ main h1 {
 
 article {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 10em;
     color: black;
     width: 75%;
     margin-right: auto;
