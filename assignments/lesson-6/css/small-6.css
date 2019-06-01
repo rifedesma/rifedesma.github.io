@@ -38,7 +38,7 @@ header {
 /*Change padding so that the logo lines up with the title*/
 
 header img {
-    width: 2.5em;
+    /*  width: 2.5em; optimized so this is no longer needed. Keeping for size reference*/
     float: left;
 }
 
@@ -204,14 +204,6 @@ address a {
 
 address a:hover {
     color: #78b638;
-}
-
-.contact img {
-    width: 2em;
-}
-
-#point {
-    width: 1em;
 }
 
 
