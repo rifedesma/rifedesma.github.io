@@ -95,7 +95,8 @@ header nav ul {
     padding: 0;
     text-align: center;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul li {
