@@ -1,0 +1,54 @@
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    nav ul.hide {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav li {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .container {
+        position: relative;
+    }
+    .weatherNow {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        padding: 5px;
+        background-color: #78b638;
+        text-align: center;
+        width: 12.5em;
+        opacity: .9;
+    }
+    .forecast {
+        position: static;
+        visibility: visible;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+    }
+    .forecast img {
+        /*width: 25%;  */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article {
+        margin-top: 3em;
+        text-align: left;
+    }
+    #fireworks {
+        float: left;
+        margin-right: 25px;
+    }
+    #town-pic {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

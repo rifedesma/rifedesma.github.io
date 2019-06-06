@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Lots of Weather </title>
+    <meta name="description" content="CIT 230 Front-End Development BYU-Idaho student Desma Rife's assignment page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan%7CRoboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img alt="logo" src="images/wlogo.png">
+            <h1>Lots of Weather</h1>
+        </div>
+        <p><i>Bringing You The Most Accurate Forecast</i> </p>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="preston-6.html" class="current">Preston</a>
+                </li>
+                <li>
+                    <a href="">Soda Springs</a>
+                </li>
+                <li>
+                    <a href="">Fish Haven</a>
+                </li>
+                <li>
+                    <a href="">Storm Center</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Preston, Idaho</h1>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 425px)" srcset="images/small-hero.jpeg">
+                <source media="(min-width: 426px)" srcset="images/large-hero.jpeg">
+                <img src="images/small-hero.jpeg" alt="Preston" id="town-pic">
+            </picture>
+            <div class="weatherNow">
+                <h3>Weather Summary</h3>
+                <p>
+                    Currently: <span>Sunny</span>
+                    <br> High: <span>76&deg;</span>
+                    <br> Windchill: <span>78&deg;</span>
+                    <br> Humidity: <span>69%</span>
+                    <br> Wind Speed: <span>5 mph</span>
+                </p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <img src="images/forecast.jpg" alt="5 Day Forecast">
+        </div>
+        <article>
+            <picture>
+                <!-- The small picture works great for all sizes except for tablet. It is the biggest size with the article in column instead of row and the picture doesn't take up enough space. -->
+                <source media="(min-width: 760px) and (max-width: 1020px)" srcset="images/large-fire-work.jpg">
+                <img src="images/small-fire-work.jpg" alt="fireworks" id="fireworks">
+            </picture>
+            <div id="articleText">
+                <h3>Preston Fireworks Spectacular!</h3>
+                <p><i>By idahohighcountry.org</i></p>
+                <p>Preston Rotary Club presents “Blast From The Past” Fireworks Spectacular aerial fireworks and ground displays in the Preston Rodeo Arena. Entertainment includes DDA “We All Sing, Wood Live, Patriot Gunslingers, High Point Gymnastics and
+                    Food Booths.
+                    <br>
+                    <br><b>Details</b> <br><b>Date:</b> July 26 <br><b>Event Categories:</b> Family Fun, Holiday Celebrations
+                </p>
+            </div>
+        </article>
+
+        <div class="contact">
+            <h3> Lots of Weather</h3>
+            <address>
+                <img src="images/point.png" alt="directions icon" id="point">
+                30 N 1st E <br> Preston, ID 83263 <br> <br>
+                <a href="mailto:lofw@lotsofweath.com">LofW@lotsofweather.com</a>
+                <br> <a href="tel:+13115552368">(311) 555-2368</a>
+
+            </address>
+            <br>
+            <img src="images/pinterest.png" alt="pinterest logo">
+            <img src="images/facebook.png" alt="facebook logo">
+            <img src="images/phone.png" alt="phone logo">
+            <img src="images/twitter.png" alt="twitter logo">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
