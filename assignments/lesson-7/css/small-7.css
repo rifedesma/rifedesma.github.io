@@ -260,9 +260,10 @@ footer {
 /* Code for Gallery */
 
 
-/* Make images apear in one column for small screens. */
+/* Make images appear in one column for small screens. */
 
 .grid {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }

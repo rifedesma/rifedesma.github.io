@@ -1,4 +1,4 @@
-/* Large devices (laptops/desktops, 769px and up) */
+/* Large devices (laptops/desktops, 1023px and up) */
 
 @media only screen and (min-width: 1023px) {
     nav ul.hide {
@@ -51,21 +51,14 @@
         width: 100%;
         margin: 0 auto;
     }
-}
-
-
-/*****************************************************************/
-
-
-/* Code for Gallery */
-
-
-/* grid should be three across for large screens. */
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    justify-items: center;
-    padding: 2em;
+    /*****************************************************************/
+    /* Code for Gallery */
+    /* grid should be three across for large screens. */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        justify-items: center;
+        padding: 2em;
+    }
 }
