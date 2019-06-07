@@ -1,6 +1,6 @@
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 769px and up) */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1023px) {
     nav ul.hide {
         list-style-type: none;
         display: flex;
@@ -51,4 +51,21 @@
         width: 100%;
         margin: 0 auto;
     }
+}
+
+
+/*****************************************************************/
+
+
+/* Code for Gallery */
+
+
+/* grid should be three across for large screens. */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    padding: 2em;
 }

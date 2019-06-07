@@ -76,7 +76,7 @@ header nav {
 
 /* Media Query for medium + screens */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 770px) {
     button {
         display: none;
     }
@@ -250,4 +250,19 @@ footer {
     text-align: center;
     background-color: #78b638;
     padding: 0.5em;
+    margin-top: 5em;
+}
+
+
+/*****************************************************************/
+
+
+/* Code for Gallery */
+
+
+/* Make images apear in one column for small screens. */
+
+.grid {
+    display: flex;
+    flex-direction: column;
 }
