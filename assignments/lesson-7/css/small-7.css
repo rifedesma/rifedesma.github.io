@@ -73,15 +73,6 @@ header nav {
     list-style-type: none;
 }
 
-
-/* Media Query for medium + screens */
-
-@media only screen and (min-width: 770px) {
-    button {
-        display: none;
-    }
-}
-
 nav ul.hide {
     display: none;
 }
@@ -266,4 +257,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+figure {
+    box-shadow: 2px 2px 5px #000000;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em;
+    font-size: .7em;
 }

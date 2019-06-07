@@ -1,0 +1,13 @@
+/* Media Query for medium + screens */
+
+@media only screen and (min-width: 426px) {
+    nav li {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
