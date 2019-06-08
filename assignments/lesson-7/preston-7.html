@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +14,7 @@
 
 </head>
 
-<body>
+<body onload="windchill()">
     <header>
         <div class="logo">
             <img alt="logo" src="images/wlogo.png">
@@ -59,10 +60,12 @@
                 <h3>Weather Summary</h3>
                 <p>
                     Currently: <span>Sunny</span>
-                    <br> High: <span>76&deg;</span>
-                    <br> Windchill: <span>78&deg;</span>
+                    <br> Temperature: <span id="temp">40 &deg;</span>
+                    <br> Windchill:
+                    <span id="windchill">&deg;</span>
                     <br> Humidity: <span>69%</span>
-                    <br> Wind Speed: <span>5 mph</span>
+                    <br> Wind Speed:
+                    <span id="speed">5 mph</span>
                 </p>
             </div>
         </div>
