@@ -51,13 +51,37 @@
                 <legend>
                     Applicant Information
                 </legend>
-                <label>First Name*</label><input type="text" name="fname" required>
-                <label>Last Name*</label><input type="text" name="lname" required>
-                <label>Phone*</label><input type="tel" name="Phone" placeholder="123-456-7899" required>
-                <label>Email</label><input type="email" name="email" placeholder="youremail@email.com">
-                <label> Five Digit Zip Code*</label><input type="number" name="shp" placeholder="" required>
-                <label> Storm Date</label><input type="date" name="date" required>
-                <label> Storm Type</label><input type="list">
+                <label>Full Name*</label> <input type="text" name="name" pattern="[A-Z][a-z] {5,}" title="Five or more characters" required>
+
+                <label>Phone*</label> <input type="tel" name="phone" placeholder="##########" required>
+                <label>Email</label> <input type="email" name="email" placeholder="youremail@email.com">
+                <label> Five Digit Zip Code*</label> <input type="number" name="zipcode" placeholder="#####" required>
+                <label> Storm Date</label > <input type="date" name="date" required>
+                <label> Storm Type <input list="stormtype" name="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                </label>
+                <label>Storm Severity</label> <label for="rating">Rating (1 to 10):</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <label>Storm Region <select name="region">
+                    <option selected disabled>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Sugar City">Sugar City</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </label>
+
+
+                <label>User in Danger Level</label> <input type="radio" name="danger" value="yes"> Yes
+                <input type="radio" name="danger" value="no"> No
+                <input type="radio" name="danger" value="maybe"> Maybe
+                <label>Additional Information or Comments</label> <input type="text" name="comments">
+                <input type="submit" value="Report Storm">
 
             </fieldset>
         </form>
@@ -69,5 +93,10 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>
+<script>
+    function adjustRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;
+    }
+</script>
 
 </html>
