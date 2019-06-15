@@ -1,0 +1,77 @@
+/* Large devices (laptops/desktops, 1023px and up) */
+
+@media only screen and (min-width: 1025px) {
+    button {
+        display: none;
+    }
+    nav ul.hide {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav li {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .container {
+        position: relative;
+    }
+    .weatherNow {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        padding: 5px;
+        background-color: #78b638;
+        text-align: center;
+        width: 12.5em;
+        opacity: .9;
+    }
+    .forecast {
+        position: static;
+        visibility: visible;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+    }
+    .forecast img {
+        /*width: 25%;  */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article {
+        margin-top: 3em;
+        text-align: left;
+    }
+    #fireworks {
+        float: left;
+        margin-right: 25px;
+    }
+    #town-pic {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*****************************************************************/
+    /* Code for Gallery */
+    /* grid should be three across for large screens. */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        justify-items: center;
+        padding: 0em 2em 0em 2em;
+    }
+    figure {
+        margin: 0px;
+    }
+    figure:hover {
+        margin: 0;
+        box-shadow: 5px 5px 15px #000000;
+    }
+    figcaption {
+        font-size: 1em;
+    }
+}

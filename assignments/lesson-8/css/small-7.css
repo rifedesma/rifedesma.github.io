@@ -1,0 +1,270 @@
+/*set page to a mobile size and center content*/
+
+.forecast {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+body {
+    min-width: 320px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #78b638;
+}
+
+
+/*Style header*/
+
+header {
+    padding-top: 1.25em;
+    background-color: #2e2d2c;
+    text-align: center;
+    color: white;
+}
+
+
+/*Change padding so that the logo lines up with the title*/
+
+header img {
+    /*  width: 2.5em; optimized so this is no longer needed. Keeping for size reference*/
+    float: left;
+}
+
+.logo {
+    width: 20.800em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header nav button {
+    background-color: #78b638;
+    border: 1px solid #78b638;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    color: white;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    outline: none;
+    list-style-type: none;
+}
+
+button:hover {
+    color: #2e2d2c;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+header nav {
+    width: 100%;
+    background-color: #78b638;
+    color: white;
+    list-style-type: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+/*set margin and padding to 0 to help center the nav. Get rid of default styling.*/
+
+header nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .current {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding-top: .625em;
+    padding-bottom: .625em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #2e2d2c;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* selected link */
+
+a:active {
+    color: white;
+}
+
+
+/*start styling main*/
+
+
+/*Make sure the town image extends the entire width of the page*/
+
+#town-pic {
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}
+
+
+/*Style Weather Summary box*/
+
+
+/*set position to absolute in order to overlap with town pick. Override heading default color*/
+
+.container {
+    position: relative;
+}
+
+.weatherNow {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    padding: 5px;
+    background-color: #78b638;
+    text-align: center;
+    width: 12.5em;
+    opacity: .9;
+}
+
+.weatherNow h3 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+
+/*color the current stats yellow*/
+
+.weatherNow span {
+    color: yellow;
+}
+
+
+/*style article*/
+
+article {
+    text-align: center;
+    margin-top: 10em;
+    color: black;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+
+/*make the image extend the full width of the parent element-the article.*/
+
+article img {
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+    width: 75%;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    color: white;
+    background-color: #2E2D2C;
+    text-align: center;
+}
+
+.contact h3 {
+    margin-bottom: 5px;
+}
+
+address a {
+    text-decoration: none;
+    color: white;
+}
+
+address a:hover {
+    color: #78b638;
+}
+
+
+/*style footer*/
+
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #78b638;
+    padding: 0.5em;
+    margin-top: 5em;
+}
+
+
+/*****************************************************************/
+
+
+/* Code for Gallery */
+
+
+/* Make images appear in one column for small screens. */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    box-shadow: 2px 2px 5px #000000;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em;
+    font-size: .7em;
+}
