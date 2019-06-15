@@ -51,7 +51,14 @@
                 <legend>
                     Applicant Information
                 </legend>
-                First Name<input type="text" name="fname">
+                <label>First Name*</label><input type="text" name="fname" required>
+                <label>Last Name*</label><input type="text" name="lname" required>
+                <label>Phone*</label><input type="tel" name="Phone" placeholder="123-456-7899" required>
+                <label>Email</label><input type="email" name="email" placeholder="youremail@email.com">
+                <label> Five Digit Zip Code*</label><input type="number" name="shp" placeholder="" required>
+                <label> Storm Date</label><input type="date" name="date" required>
+                <label> Storm Type</label><input type="list">
+
             </fieldset>
         </form>
     </main>
