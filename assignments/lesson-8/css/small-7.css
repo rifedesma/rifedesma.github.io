@@ -268,3 +268,51 @@ figcaption {
     padding: 1em;
     font-size: .7em;
 }
+
+
+/*****************************************************************/
+
+
+/*Style Storm Center */
+
+form {
+    margin: 50px;
+}
+
+form legend {
+    padding: .5em;
+    margin-left: 1em;
+    font-family: 'Kodchasan', sans-serif;
+    color: #78b638;
+    font-size: 2em;
+}
+
+form label {
+    display: block;
+    line-height: 4em;
+}
+
+.xlabel {
+    display: inline;
+}
+
+.submit {
+    background-color: grey;
+    border: none;
+    padding: .9em;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #78b638;
+}
+
+
+/*****************************************************************/
+
+
+/*Style thank you page*/
+
+.thx {
+    text-align: center;
+}
