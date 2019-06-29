@@ -39,6 +39,8 @@ function showInfo(jsonObj) {
             var imgPath = 'images/';
             imgPath += towns[i].name.toLowerCase().replace(' ', '');
             imgPath += '.jpg';
+            var newImg = document.createElement('IMG');
+            newImg.setAttribute("src", imgPath);
             console.log(imgPath);
 
 
@@ -49,6 +51,7 @@ function showInfo(jsonObj) {
             myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
             myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
             myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            newImg.imgPath = imgPath;
 
 
             myArticle.appendChild(myH2);
@@ -56,6 +59,7 @@ function showInfo(jsonObj) {
             myArticle.appendChild(myPara2);
             myArticle.appendChild(myPara3);
             myArticle.appendChild(myPara4);
+            myArticle.appendChild(newImg);
             section.appendChild(myArticle);
         }
 }
