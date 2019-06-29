@@ -36,6 +36,11 @@ function showInfo(jsonObj) {
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
             var myPara4 = document.createElement('p');
+            var imgPath = 'images/';
+            imgPath += towns[i].name.toLowerCase().replace(' ', '');
+            imgPath += '.jpg';
+            console.log(imgPath);
+
 
 
 
