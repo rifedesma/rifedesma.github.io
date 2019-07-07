@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Gallery | Lots of Weather </title>
+    <meta name="description" content="CIT 230 Front-End Development BYU-Idaho student Desma Rife's assignment page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan%7CRoboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mainHeader">
+        <div class="logo">
+            <img alt="logo" src="images/wlogo.png">
+            <h1>Lots of Weather</h1>
+        </div>
+        <p><i>Bringing You The Most Accurate Forecast</i> </p>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="preston.html">Preston</a>
+                </li>
+                <li>
+                    <a href="">Soda Springs</a>
+                </li>
+                <li>
+                    <a href="">Fish Haven</a>
+                </li>
+                <li>
+                    <a href="stormcenter.html">Storm Center</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="current">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="weather-gallery">Weather Gallery</h1>
+        <div class="grid">
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/lightening-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/lightening-large.jpg">
+                    <img src="images/lightening-small.jpg" alt="lightening storm" id="lightening">
+                </picture>
+                <figcaption>Lightening strikes near Bear Lake</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/mountains-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/mountains-large.jpg">
+                    <img src="images/mountains-small.jpg" alt="sunsetting on the mountains" id="mountains">
+                </picture>
+                <figcaption>The sun sets over the Teton Mountains</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/nice-weather-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/nice-weather-large.jpg">
+                    <img src="images/nice-weather-small.jpg" alt="a horse stands in a field with a mountain in the background. The sun is setting" id="nice-weather">
+                </picture>
+                <figcaption>Idaho wildlife enjoying the Spring weather</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/rainbow-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/rainbow-large.jpg">
+                    <img src="images/rainbow-small.jpg" alt="a beautiful rainbow" id="rainbow">
+                </picture>
+                <figcaption>Rainbow after Bear Lake's storm this week</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/snow-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/snow-large.jpg">
+                    <img src="images/snow-small.jpg" alt="a building covered in snow during a snowstorm" id="snow">
+                </picture>
+                <figcaption>This year could bring a heavy Winter</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/tornado-small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/tornado-large.jpg">
+                    <img src="images/tornado-small.jpg" alt="a funnel cloud" id="tornado">
+                </picture>
+                <figcaption>A funnel cloud formed over Franklin County</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

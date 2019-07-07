@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Gallery | Lots of Weather </title>
+    <meta name="description" content="CIT 230 Front-End Development BYU-Idaho student Desma Rife's assignment page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan%7CRoboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mainHeader">
+        <div class="logo">
+            <img alt="logo" src="images/wlogo.png">
+            <h1>Lots of Weather</h1>
+        </div>
+        <p><i>Bringing You The Most Accurate Forecast</i> </p>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="preston.html">Preston</a>
+                </li>
+                <li>
+                    <a href="">Soda Springs</a>
+                </li>
+                <li>
+                    <a href="">Fish Haven</a>
+                </li>
+                <li>
+                    <a href="stormcenter.html" class="current">Storm Center</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>
+                    Report a Storm
+                </legend>
+                <label>Full Name* <input type="text" name="name" title="Five or more characters"  required> </label>
+
+                <label>Phone* <input type="tel" name="phone" placeholder="##########" required> </label>
+                <label>Email <input type="email" name="email" placeholder="youremail@email.com"> </label>
+                <label> Five Digit Zip Code* <input type="number" name="zipcode" placeholder="#####" required> </label>
+                <label> Storm Date <input type="date" name="date"> </label >
+                <label> Storm Type <input list="stormtype" name="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                </label>
+                <label for="rating">Storm Severity Rating (1 to 10): 
+                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span> </label>
+                <label>Storm Region <select name="region">
+                    <option selected disabled>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Sugar City">Sugar City</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <!--try and get radio to fill when you click on the label "yes" "no" "maybe"-->
+                <label>User in Danger Level</label> <input type="radio" name="danger" value="yes"> <label class="xlabel">Yes</label>
+                <input type="radio" name="danger" value="no">
+                <label class="xlabel">No</label>
+                <input type="radio" name="danger" value="maybe"> <label class="xlabel">Maybe</label>
+
+                <label>Additional Information or Comments <input type="text" name="comments"></label>
+                <input type="submit" value="Submit Report" class="submit">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        function adjustRating(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
+        }
+    </script>
+</body>
+
+
+</html>
