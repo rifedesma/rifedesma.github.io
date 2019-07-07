@@ -4,7 +4,7 @@
     button {
         display: none;
     }
-    nav ul.hide {
+    .mainHeader ul.hide {
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -75,5 +75,12 @@
     }
     figcaption {
         font-size: 1em;
+    }
+    /*****************************************************************/
+    /*Style Home*/
+    section {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
     }
 }

@@ -29,10 +29,10 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="preston.html" class="current">Preston</a>
+                    <a href="preston.html">Preston</a>
                 </li>
                 <li>
-                    <a href="sodasprings.html">Soda Springs</a>
+                    <a href="sodasprings.html" class="current">Soda Springs</a>
                 </li>
                 <li>
                     <a href="fishhaven.html">Fish Haven</a>
@@ -49,23 +49,23 @@
     </header>
 
     <main>
-        <h1>Preston, Idaho</h1>
+        <h1>Soda Springs, Idaho</h1>
         <div class="container">
             <picture>
-                <source media="(max-width: 425px)" srcset="images/small-hero.jpeg">
-                <source media="(min-width: 426px)" srcset="images/large-hero.jpeg">
+                <source media="(max-width: 425px)" srcset="images/ss-hero-small.jpg">
+                <source media="(min-width: 426px)" srcset="images/ss-hero-large.jpg">
                 <img src="images/small-hero.jpeg" alt="Preston" id="town-pic">
             </picture>
             <div class="weatherNow">
                 <h3>Weather Summary</h3>
                 <p>
-                    Currently: <span id="description"></span>
-                    <br> Temperature: <span id="temp">&deg;</span>
+                    Currently: <span id="ss-description"></span>
+                    <br> Temperature: <span id="ss-temp">&deg;</span>
                     <br> Windchill:
-                    <span id="windchill">&deg;</span>
-                    <br> Humidity: <span id="humidity"></span>
+                    <span id="ss-windchill">&deg;</span>
+                    <br> Humidity: <span id="ss-humidity"></span>
                     <br> Wind Speed:
-                    <span id="windspeed"></span>
+                    <span id="ss-windspeed"></span>
                 </p>
             </div>
         </div>
@@ -73,26 +73,26 @@
             <h2>5 Day Forecast</h2>
             <div class="forecast">
                 <figure>
-                    <img id="dayOne">
-                    <figcaption id="forecastTemp"></figcaption>
+                    <img id="ss-dayOne">
+                    <figcaption id="ss-forecastTemp"></figcaption>
                 </figure>
                 <figure>
-                    <img id="dayTwo">
-                    <figcaption id="forecastTempTwo"></figcaption>
+                    <img id="ss-dayTwo">
+                    <figcaption id="ss-forecastTempTwo"></figcaption>
                 </figure>
                 <figure>
-                    <img id="dayThree">
-                    <figcaption id="forecastTempThree"></figcaption>
+                    <img id="ss-dayThree">
+                    <figcaption id="ss-forecastTempThree"></figcaption>
 
                 </figure>
                 <figure>
-                    <img id="dayFour">
-                    <figcaption id="forecastTempFour"></figcaption>
+                    <img id="ss-dayFour">
+                    <figcaption id="ss-forecastTempFour"></figcaption>
 
                 </figure>
                 <figure>
-                    <img id="dayFive">
-                    <figcaption id="forecastTempFive"></figcaption>
+                    <img id="ss-dayFive">
+                    <figcaption id="ss-forecastTempFive"></figcaption>
 
                 </figure>
             </div>
@@ -104,7 +104,7 @@
                 <img src="images/small-fire-work.jpg" alt="fireworks" id="fireworks">
             </picture>
             <div id="articleText">
-                <h3>Preston Fireworks Spectacular!</h3>
+                <h3>Fish Haven Fireworks Spectacular!</h3>
                 <p><i>By idahohighcountry.org</i></p>
                 <p>Preston Rotary Club presents “Blast From The Past” Fireworks Spectacular aerial fireworks and ground displays in the Preston Rodeo Arena. Entertainment includes DDA “We All Sing, Wood Live, Patriot Gunslingers, High Point Gymnastics and
                     Food Booths.
@@ -132,7 +132,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230 | Open Weather </p>
+        <p>&copy; <span id="day"></span> <span id="date"></span> <span id="month"></span> <span id="year"></span> | Lots of Weather | Desma Rife | CIT 230 | Open Weather API</p>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
