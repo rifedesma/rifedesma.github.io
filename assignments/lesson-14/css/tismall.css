@@ -1,5 +1,9 @@
 body {
     font-family: 'Abhaya Libre', serif;
+    min-width: 320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -20,7 +24,7 @@ body #logo h1 {
 
 body #logo h2 {
     font-size: 1em;
-    border-bottom: solid #22333b .1em;
+    border-bottom: .1em solid #22333b;
 }
 
 .mainHeader {
@@ -64,5 +68,26 @@ body #logo h2 {
 
 .mainHeader nav ul li .current {
     font-size: 115%;
+    color: #476a6f;
+}
+
+
+/* unvisited link */
+
+.mainHeader a:link {
+    color: #22333b;
+}
+
+
+/* visited link */
+
+.mainHeader a:visited {
+    color: #22333b;
+}
+
+
+/* mouse over link */
+
+.mainHeader a:hover {
     color: #476a6f;
 }

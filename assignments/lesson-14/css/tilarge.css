@@ -1,9 +1,24 @@
     /* Large devices (laptops/desktops, 1023px and up) */
     
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 1023px) {
         body #logo h1 {
             font-family: 'Monsieur La Doulaise', cursive;
-            font-size: 4em;
+            font-size: 3em;
             margin-bottom: -0.2em;
+        }
+        body #logo h2 {
+            font-size: 1.3em;
+            border-bottom: .1em solid #22333b;
+        }
+        .mainHeader nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .mainHeader nav ul li {
+            padding: 0px 30px 10px 30px;
+            font-size: 1.2em;
         }
     }
