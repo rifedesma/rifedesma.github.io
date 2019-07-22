@@ -24,4 +24,15 @@
             padding: 0px 30px 10px 30px;
             font-size: 1.2em;
         }
+        .homeTemple {
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+            margin: 0 auto;
+        }
+        .hTcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }

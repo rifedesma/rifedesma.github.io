@@ -126,19 +126,14 @@ body #logo h2 {
 
 .homeTemple {
     display: flex;
-    flex-direction: row;
-    width: 700px;
+    flex-direction: column;
+    width: 300px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .homeTemple img {
     padding-right: 20px;
-}
-
-.hTcontent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #homeRes {
