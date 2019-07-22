@@ -45,7 +45,7 @@ body #logo h2 {
 
 .mainHeader nav button {
     background-color: #f2f4f3;
-    border: 1px solid #f2f2f3;
+    border: 1px solid #f2f4f3;
     font-family: 'Abhaya Libre', serif;
     font-size: 125%;
     color: #22333b;
@@ -144,10 +144,15 @@ body #logo h2 {
 #homeRes {
     width: 160px;
     background-color: #22333b;
-    color: #f2f2f3;
+    color: #f2f4f3;
     border: 1px solid #22333b;
     padding: 1em;
     border-radius: 5px;
+}
+
+#homeRes:hover {
+    background-color: #476a6f;
+    border-color: #476a6f;
 }
 
 
@@ -157,10 +162,15 @@ body #logo h2 {
 /*Style footer*/
 
 footer {
-    color: white;
+    color: #f2f4f3;
     width: 100%;
     text-align: center;
     background-color: #22333b;
     padding: 0.5em;
     margin-top: 5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f2f4f3;
 }
