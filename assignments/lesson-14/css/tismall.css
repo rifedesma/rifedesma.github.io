@@ -45,7 +45,7 @@ body #logo h2 {
 
 .mainHeader nav button {
     background-color: #f2f4f3;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f3;
     font-family: 'Abhaya Libre', serif;
     font-size: 125%;
     color: #22333b;
@@ -122,4 +122,45 @@ body #logo h2 {
 
 #homeHero {
     width: 100%;
+}
+
+.homeTemple {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.homeTemple img {
+    padding-right: 20px;
+}
+
+.hTcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#homeRes {
+    width: 160px;
+    background-color: #22333b;
+    color: #f2f2f3;
+    border: 1px solid #22333b;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*Style footer*/
+
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #22333b;
+    padding: 0.5em;
+    margin-top: 5em;
 }
