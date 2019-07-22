@@ -31,6 +31,7 @@ body #logo h2 {
     background-color: #f2f4f3;
     padding: 0.5em;
     color: #22333b;
+    text-align: center;
 }
 
 
@@ -39,10 +40,34 @@ body #logo h2 {
 
 /*Style Navigation*/
 
+
+/* Menu button */
+
+.mainHeader nav button {
+    background-color: #f2f4f3;
+    border: 1px solid #f2f2f2;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 125%;
+    color: #22333b;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    outline: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.mainHeader nav button:hover {
+    color: #476a6f;
+}
+
 .mainNav {
-    width: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mainHeader ul.hide {
+    display: none;
 }
 
 .mainHeader nav ul {

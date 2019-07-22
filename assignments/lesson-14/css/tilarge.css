@@ -1,6 +1,9 @@
     /* Large devices (laptops/desktops, 1023px and up) */
     
     @media only screen and (min-width: 1023px) {
+        button {
+            display: none;
+        }
         body #logo h1 {
             font-family: 'Monsieur La Doulaise', cursive;
             font-size: 3em;
