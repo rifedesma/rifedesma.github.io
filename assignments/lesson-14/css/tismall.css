@@ -116,3 +116,10 @@ body #logo h2 {
 .mainHeader a:hover {
     color: #476a6f;
 }
+
+
+/*Style body of Home Page*/
+
+#homeHero {
+    width: 100%;
+}

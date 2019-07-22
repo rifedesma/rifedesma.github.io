@@ -13,7 +13,7 @@
             font-size: 1.3em;
             border-bottom: .1em solid #22333b;
         }
-        .mainHeader nav ul {
+        .mainHeader nav ul.hide {
             list-style-type: none;
             display: flex;
             flex-direction: row;
