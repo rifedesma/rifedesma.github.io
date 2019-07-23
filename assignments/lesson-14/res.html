@@ -32,7 +32,43 @@
         </nav>
     </header>
     <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
 
+                <label>Full Name* <input type="text" name="name" title="Five or more characters"  required> </label>
+
+                <label>Phone* <input type="tel" name="phone" placeholder="##########" required> </label>
+                <label>Email <input type="email" name="email" placeholder="youremail@email.com"> </label>
+                <label> Home Town/City* <input type="text" name="city" placeholder="city" required> </label>
+                <label> Home State/Province* <input type="text" name="state" placeholder="state" required> </label>
+
+                <label> Reservation Start Date <input type="date" name="date"> </label >
+                <label> Reservation End Date <input type="date" name="date"> </label >
+
+                <label> Room Type <input list="roomtype" name="roomtype">
+                <datalist id="roomtype">
+                    <option selected disabled>Select Room Type</option>
+                    <option value="1 Queen Size Bed">
+                    <option value="2 Queen Size Beds">
+                    <option value="1 Queen Size Bed With Kitchenette">
+                    <option value="2 Queen Size Beds With Kitchenette">
+                </datalist>
+                </label>
+                <label>Location <select name="location">
+                    <option selected disabled>Select Location</option>
+                    <option value="Boston, Massachusetts">Boston, Massachusetts</option>
+                    <option value="London, England">London, England</option>
+                    <option value="Columbus, Ohio">Columbus, Ohio</option>
+                    <option value="San Antonio, Texas">San Antonio, Texas</option>
+                    </select>
+                </label>
+                <label>Number of Rooms <input type="number" name="numofRooms"></label>
+
+                <label>Additional Information or Comments <input type="text" name="comments"></label>
+                <input type="submit" value="Submit Report" class="submit">
+
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div class="contact">

@@ -1,0 +1,26 @@
+/* Media Query for medium + screens */
+
+@media only screen and (min-width: 426px) {
+    /*****************************************************************/
+    /*Style Reservation*/
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    form fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-top: 50px;
+    }
+    form label {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: flex-end;
+    }
+    form label>input {
+        flex: 1;
+    }
+}
