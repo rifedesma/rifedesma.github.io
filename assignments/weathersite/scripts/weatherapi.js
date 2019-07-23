@@ -1,4 +1,4 @@
-let currentWeatherRequest = new XMLhttpssRequest();
+let currentWeatherRequest = new XMLHttpRequest();
 currentWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 currentWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
@@ -25,7 +25,7 @@ currentWeatherRequest.onload = function() {
     document.getElementById("windspeed").innerHTML = windspeed + " mph";
 }
 
-let forecastWeatherRequest = new XMLhttpsRequest();
+let forecastWeatherRequest = new XMLHttpRequest();
 forecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 forecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
@@ -87,7 +87,7 @@ forecastWeatherRequest.onload = function() {
 // FISH HAVEN - 5585010
 // ----------------------------------------------
 
-let fhCurrentWeatherRequest = new XMLhttpsRequest();
+let fhCurrentWeatherRequest = new XMLHttpRequest();
 fhCurrentWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 fhCurrentWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
@@ -114,7 +114,7 @@ fhCurrentWeatherRequest.onload = function() {
     document.getElementById("fh-windspeed").innerHTML = windspeed + " mph";
 }
 
-let fhForecastWeatherRequest = new XMLhttpsRequest();
+let fhForecastWeatherRequest = new XMLHttpRequest();
 fhForecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 fhForecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
@@ -203,7 +203,7 @@ ssCurrentWeatherRequest.onload = function() {
     document.getElementById("ss-windspeed").innerHTML = windspeed + " mph";
 }
 
-let ssForecastWeatherRequest = new XMLhttpsRequest();
+let ssForecastWeatherRequest = new XMLHttpRequest();
 ssForecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 ssForecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
