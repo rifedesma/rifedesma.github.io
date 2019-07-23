@@ -1,5 +1,5 @@
-let currentWeatherRequest = new XMLHttpRequest();
-currentWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let currentWeatherRequest = new XMLhttpssRequest();
+currentWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 currentWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 currentWeatherRequest.onload = function() {
@@ -25,8 +25,8 @@ currentWeatherRequest.onload = function() {
     document.getElementById("windspeed").innerHTML = windspeed + " mph";
 }
 
-let forecastWeatherRequest = new XMLHttpRequest();
-forecastWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let forecastWeatherRequest = new XMLhttpsRequest();
+forecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 forecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 forecastWeatherRequest.onload = function() {
@@ -35,7 +35,7 @@ forecastWeatherRequest.onload = function() {
     // day one
     let tempOne = convertKtoF(weatherData.list[0].main.temp);
     let descOne = weatherData.list[0].weather[0].icon;
-    let icon = "http://openweathermap.org/img/wn/" + descOne + "@2x.png";
+    let icon = "https://openweathermap.org/img/wn/" + descOne + "@2x.png";
     var newImg = document.getElementById("dayOne");
     newImg.setAttribute("src", icon);
     document.getElementById("forecastTemp").innerHTML += tempOne.toFixed(2) + "&deg;";
@@ -45,7 +45,7 @@ forecastWeatherRequest.onload = function() {
     // day two
     let tempTwo = convertKtoF(weatherData.list[8].main.temp);
     let descTwo = weatherData.list[8].weather[0].icon;
-    let iconTwo = "http://openweathermap.org/img/wn/" + descTwo + "@2x.png";
+    let iconTwo = "https://openweathermap.org/img/wn/" + descTwo + "@2x.png";
     var newImg = document.getElementById("dayTwo");
     newImg.setAttribute("src", iconTwo);
     document.getElementById("forecastTempTwo").innerHTML += tempTwo.toFixed(2);
@@ -54,7 +54,7 @@ forecastWeatherRequest.onload = function() {
     // day three
     let tempThree = convertKtoF(weatherData.list[16].main.temp);
     let descThree = weatherData.list[16].weather[0].icon;
-    let iconThree = "http://openweathermap.org/img/wn/" + descThree + "@2x.png";
+    let iconThree = "https://openweathermap.org/img/wn/" + descThree + "@2x.png";
     var newImg = document.getElementById("dayThree");
     newImg.setAttribute("src", iconThree);
     document.getElementById("forecastTempThree").innerHTML += tempThree.toFixed(2);
@@ -63,7 +63,7 @@ forecastWeatherRequest.onload = function() {
     // day four
     let tempFour = convertKtoF(weatherData.list[24].main.temp);
     let descFour = weatherData.list[24].weather[0].icon;
-    let iconFour = "http://openweathermap.org/img/wn/" + descFour + "@2x.png";
+    let iconFour = "https://openweathermap.org/img/wn/" + descFour + "@2x.png";
     var newImg = document.getElementById("dayFour");
     newImg.setAttribute("src", iconFour);
     document.getElementById("forecastTempFour").innerHTML += tempFour.toFixed(2);
@@ -72,7 +72,7 @@ forecastWeatherRequest.onload = function() {
     // day five
     let tempFive = convertKtoF(weatherData.list[32].main.temp);
     let descFive = weatherData.list[32].weather[0].icon;
-    let iconFive = "http://openweathermap.org/img/wn/" + descFive + "@2x.png";
+    let iconFive = "https://openweathermap.org/img/wn/" + descFive + "@2x.png";
     var newImg = document.getElementById("dayFive");
     newImg.setAttribute("src", iconFive);
     document.getElementById("forecastTempFive").innerHTML += tempFive.toFixed(2);
@@ -87,8 +87,8 @@ forecastWeatherRequest.onload = function() {
 // FISH HAVEN - 5585010
 // ----------------------------------------------
 
-let fhCurrentWeatherRequest = new XMLHttpRequest();
-fhCurrentWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/weather?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let fhCurrentWeatherRequest = new XMLhttpsRequest();
+fhCurrentWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 fhCurrentWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 fhCurrentWeatherRequest.onload = function() {
@@ -114,8 +114,8 @@ fhCurrentWeatherRequest.onload = function() {
     document.getElementById("fh-windspeed").innerHTML = windspeed + " mph";
 }
 
-let fhForecastWeatherRequest = new XMLHttpRequest();
-fhForecastWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let fhForecastWeatherRequest = new XMLhttpsRequest();
+fhForecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5585010&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 fhForecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 fhForecastWeatherRequest.onload = function() {
@@ -124,7 +124,7 @@ fhForecastWeatherRequest.onload = function() {
     // day one
     let tempOne = convertKtoF(weatherData.list[0].main.temp);
     let descOne = weatherData.list[0].weather[0].icon;
-    let icon = "http://openweathermap.org/img/wn/" + descOne + "@2x.png";
+    let icon = "https://openweathermap.org/img/wn/" + descOne + "@2x.png";
     var newImg = document.getElementById("fh-dayOne");
     newImg.setAttribute("src", icon);
     document.getElementById("fh-forecastTemp").innerHTML += tempOne.toFixed(2) + "&deg;";
@@ -134,7 +134,7 @@ fhForecastWeatherRequest.onload = function() {
     // day two
     let tempTwo = convertKtoF(weatherData.list[8].main.temp);
     let descTwo = weatherData.list[8].weather[0].icon;
-    let iconTwo = "http://openweathermap.org/img/wn/" + descTwo + "@2x.png";
+    let iconTwo = "https://openweathermap.org/img/wn/" + descTwo + "@2x.png";
     var newImg = document.getElementById("fh-dayTwo");
     newImg.setAttribute("src", iconTwo);
     document.getElementById("fh-forecastTempTwo").innerHTML += tempTwo.toFixed(2);
@@ -143,7 +143,7 @@ fhForecastWeatherRequest.onload = function() {
     // day three
     let tempThree = convertKtoF(weatherData.list[16].main.temp);
     let descThree = weatherData.list[16].weather[0].icon;
-    let iconThree = "http://openweathermap.org/img/wn/" + descThree + "@2x.png";
+    let iconThree = "https://openweathermap.org/img/wn/" + descThree + "@2x.png";
     var newImg = document.getElementById("fh-dayThree");
     newImg.setAttribute("src", iconThree);
     document.getElementById("fh-forecastTempThree").innerHTML += tempThree.toFixed(2);
@@ -152,7 +152,7 @@ fhForecastWeatherRequest.onload = function() {
     // day four
     let tempFour = convertKtoF(weatherData.list[24].main.temp);
     let descFour = weatherData.list[24].weather[0].icon;
-    let iconFour = "http://openweathermap.org/img/wn/" + descFour + "@2x.png";
+    let iconFour = "https://openweathermap.org/img/wn/" + descFour + "@2x.png";
     var newImg = document.getElementById("fh-dayFour");
     newImg.setAttribute("src", iconFour);
     document.getElementById("fh-forecastTempFour").innerHTML += tempFour.toFixed(2);
@@ -161,7 +161,7 @@ fhForecastWeatherRequest.onload = function() {
     // day five
     let tempFive = convertKtoF(weatherData.list[32].main.temp);
     let descFive = weatherData.list[32].weather[0].icon;
-    let iconFive = "http://openweathermap.org/img/wn/" + descFive + "@2x.png";
+    let iconFive = "https://openweathermap.org/img/wn/" + descFive + "@2x.png";
     var newImg = document.getElementById("fh-dayFive");
     newImg.setAttribute("src", iconFive);
     document.getElementById("fh-forecastTempFive").innerHTML += tempFive.toFixed(2);
@@ -176,8 +176,8 @@ fhForecastWeatherRequest.onload = function() {
 // SODA SPRINGS - 5607916
 // ----------------------------------------------
 
-let ssCurrentWeatherRequest = new XMLHttpRequest();
-ssCurrentWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/weather?id=5607916&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let ssCurrentWeatherRequest = new XMLhttpsRequest();
+ssCurrentWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5607916&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 ssCurrentWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 ssCurrentWeatherRequest.onload = function() {
@@ -203,8 +203,8 @@ ssCurrentWeatherRequest.onload = function() {
     document.getElementById("ss-windspeed").innerHTML = windspeed + " mph";
 }
 
-let ssForecastWeatherRequest = new XMLHttpRequest();
-ssForecastWeatherRequest.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
+let ssForecastWeatherRequest = new XMLhttpsRequest();
+ssForecastWeatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=7d408c0a7bc96b2b870cb8d32556f0f6", true);
 ssForecastWeatherRequest.send();
 /*var apiURLstring = "api.openweathermap.org / data / 2.5 / forecast ? id = 5604473 & APPID= 7d408c0a7bc96b2b870cb8d32556f0f6";*/
 ssForecastWeatherRequest.onload = function() {
@@ -213,7 +213,7 @@ ssForecastWeatherRequest.onload = function() {
     // day one
     let tempOne = convertKtoF(weatherData.list[0].main.temp);
     let descOne = weatherData.list[0].weather[0].icon;
-    let icon = "http://openweathermap.org/img/wn/" + descOne + "@2x.png";
+    let icon = "https://openweathermap.org/img/wn/" + descOne + "@2x.png";
     var newImg = document.getElementById("ss-dayOne");
     newImg.setAttribute("src", icon);
     document.getElementById("ss-forecastTemp").innerHTML += tempOne.toFixed(2) + "&deg;";
@@ -223,7 +223,7 @@ ssForecastWeatherRequest.onload = function() {
     // day two
     let tempTwo = convertKtoF(weatherData.list[8].main.temp);
     let descTwo = weatherData.list[8].weather[0].icon;
-    let iconTwo = "http://openweathermap.org/img/wn/" + descTwo + "@2x.png";
+    let iconTwo = "https://openweathermap.org/img/wn/" + descTwo + "@2x.png";
     var newImg = document.getElementById("ss-dayTwo");
     newImg.setAttribute("src", iconTwo);
     document.getElementById("ss-forecastTempTwo").innerHTML += tempTwo.toFixed(2);
@@ -232,7 +232,7 @@ ssForecastWeatherRequest.onload = function() {
     // day three
     let tempThree = convertKtoF(weatherData.list[16].main.temp);
     let descThree = weatherData.list[16].weather[0].icon;
-    let iconThree = "http://openweathermap.org/img/wn/" + descThree + "@2x.png";
+    let iconThree = "https://openweathermap.org/img/wn/" + descThree + "@2x.png";
     var newImg = document.getElementById("ss-dayThree");
     newImg.setAttribute("src", iconThree);
     document.getElementById("ss-forecastTempThree").innerHTML += tempThree.toFixed(2);
@@ -241,7 +241,7 @@ ssForecastWeatherRequest.onload = function() {
     // day four
     let tempFour = convertKtoF(weatherData.list[24].main.temp);
     let descFour = weatherData.list[24].weather[0].icon;
-    let iconFour = "http://openweathermap.org/img/wn/" + descFour + "@2x.png";
+    let iconFour = "https://openweathermap.org/img/wn/" + descFour + "@2x.png";
     var newImg = document.getElementById("ss-dayFour");
     newImg.setAttribute("src", iconFour);
     document.getElementById("ss-forecastTempFour").innerHTML += tempFour.toFixed(2);
@@ -250,7 +250,7 @@ ssForecastWeatherRequest.onload = function() {
     // day five
     let tempFive = convertKtoF(weatherData.list[32].main.temp);
     let descFive = weatherData.list[32].weather[0].icon;
-    let iconFive = "http://openweathermap.org/img/wn/" + descFive + "@2x.png";
+    let iconFive = "https://openweathermap.org/img/wn/" + descFive + "@2x.png";
     var newImg = document.getElementById("ss-dayFive");
     newImg.setAttribute("src", iconFive);
     document.getElementById("ss-forecastTempFive").innerHTML += tempFive.toFixed(2);
