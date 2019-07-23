@@ -1,9 +1,9 @@
 {
     "temples": [{
-            "name": "Boston, Massachusetts",
+            "name": "Boston Massachusetts",
             "announced": "30 September 1995",
             "dedicated": "1 October 2000",
-            "Temple Closures 2019": [
+            "TempleClosures": [
                 "Saturday, 5 October 2019 ",
                 "Wednesday, 27 November 2019 ",
                 "Thursday, 28 November 2019 ",
@@ -13,18 +13,18 @@
             ]
         },
         {
-            "name": "London, England",
+            "name": "London England",
             "announced": "10 August 1953",
             "dedicated": "7 September 1958",
-            "Temple Closures 2019": [
+            "TempleClosures": [
                 "Tuesday, 6 August 2019 - Monday, 16 September 2019 "
             ]
         },
         {
-            "name": "Columbus, Ohio",
+            "name": "Columbus Ohio",
             "announced": "25 April 1998",
             "dedicated": "4 September 1999",
-            "Temple Closures 2019": [
+            "TempleClosures": [
                 "Tuesday, 24 September - Saturday, 5 October 2019 ",
                 "Wednesday, 27 November 2019 ",
                 "Thursday, 28 November 2019 ",
@@ -35,10 +35,10 @@
             ]
         },
         {
-            "name": "San Antonio, Texas",
+            "name": "San Antonio Texas",
             "announced": "24 June 2001",
             "dedicated": "22 May 2005",
-            "Temple Closures 2019": [
+            "TempleClosures": [
                 "Saturday, 5 October 2019 ",
                 "Monday, 7 October 2019 - Monday, 21 October 2019",
                 "Wednesday, 27 November 2019 ",
