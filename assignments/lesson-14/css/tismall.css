@@ -259,6 +259,31 @@ form .submit:hover {
 /*---------------------------------------------------------------------------------------------------*/
 
 
+/*Services*/
+
+.serviceItems {
+    padding-top: 30px;
+}
+
+.serviceItems figcaption a {
+    text-decoration: none;
+    color: #22333b;
+}
+
+.serviceItems figure {
+    background-color: #f2f4f3;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+.serviceItems figure:hover {
+    box-shadow: 2px 2px 5px #22333b;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
 /*Style footer*/
 
 footer {
