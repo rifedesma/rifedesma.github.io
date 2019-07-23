@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Temple Inn | Home | Desma</title>
+    <title>Temple Inn | Reception Venue | Desma</title>
     <meta name="description" content="CIT 230 Front-End Development BYU-Idaho student Desma Rife's Final">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/tismall.css">
@@ -23,35 +23,23 @@
         <nav class="mainNav">
             <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
-                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="res.html">Reservations</a></li>
                 <div class="dropdown">
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="current">Services</a></li>
                     <div class="dropdown-content">
                         <a href="services-venue.html">Reception Venue</a>
                         <a href="services-missionary.html">Full-Time Missionaries</a>
                     </div>
                 </div>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <picture>
-            <source media="(max-width: 425px)" srcset="images/hotel-roomsmall.jpg">
-            <source media="(min-width: 426px)" srcset="images/hotel-roomlarge.jpg">
-            <img src="images/hotel-roomsmall.jpg" alt="hotel room" id="homeHero">
-        </picture>
-        <div class="homeTemple">
-            <img src="images/columbus-templesmall.jpg" alt="columbus temple">
-            <div class="hTcontent">
-                <p>Pictured is a room near our Columbus, Ohio location. Only a five-minute drive from the beautiful temple of the Church of Jesus Christ of Latter-Day Saints.</p>
-                <button type="button" id="homeRes">Reserve a Room</button>
-            </div>
-        </div>
-    </main>
 
+    </main>
     <footer>
         <div class="contact">
             <address>
