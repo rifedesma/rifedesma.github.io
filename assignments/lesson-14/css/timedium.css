@@ -40,23 +40,17 @@
     .venueSection p {
         font-size: 1.5em;
     }
-}
-
-.mapInfo {
-    display: flex;
-    flex-direction: row;
-    width: 900px;
-    margin: 0 auto;
-}
-
-.contactInfo {
-    padding: 30px;
-}
-
-.contactInfo address {
-    color: #22333b;
-    font-size: 1.2em;
-}
-
-
+    .mapInfo {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        margin: 0 auto;
+    }
+    .contactInfo {
+        padding: 30px;
+    }
+    .contactInfo address {
+        color: #22333b;
+        font-size: 1.2em;
+    }
 }
