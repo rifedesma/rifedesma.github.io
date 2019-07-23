@@ -1,7 +1,7 @@
     /* Large devices (laptops/desktops, 1023px and up) */
     
     @media only screen and (min-width: 1023px) {
-        nav button {
+        nav #menu {
             display: none;
         }
         body #logo h1 {

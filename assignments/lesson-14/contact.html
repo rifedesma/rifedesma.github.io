@@ -21,12 +21,18 @@
         </div>
 
         <nav class="mainNav">
-            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="res.html">Reservations</a></li>
-                <li><a href="services.html">Services</a></li>
+                <div class="dropdown">
+                    <li><a href="services.html">Services</a></li>
+                    <div class="dropdown-content">
+                        <a href="services-venue.html">Reception Venue</a>
+                        <a href="services-missionary">Full-Time Missionaries</a>
+                    </div>
+                </div>
                 <li><a href="contact.html" class="current">Contact</a></li>
             </ul>
         </nav>

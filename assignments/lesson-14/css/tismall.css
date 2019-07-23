@@ -118,6 +118,57 @@ body #logo h2 {
 }
 
 
+/*Drop Down Menu*/
+
+li a:hover,
+.dropdown:hover {
+    background-color: #f2f4f3;
+    transition: 0.5s;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* drop-down box format*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2f4f3;
+    min-width: 160px;
+}
+
+
+/* drop-down text format*/
+
+.dropdown-content a {
+    float: none;
+    color: #22333b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* drop-down hover color*/
+
+.dropdown-content a:hover {
+    color: #476a6f;
+    transition: 0.3s;
+}
+
+
+/* actavates drop-down when hovering */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /*Style body of Home Page*/
 
 #homeHero {
