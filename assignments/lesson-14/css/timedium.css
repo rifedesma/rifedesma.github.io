@@ -27,12 +27,15 @@
     /*Services*/
     .serviceItems {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .serviceItems figcaption {
         width: 298px;
+    }
+    .amenities {
+        font-size: 1.2em;
     }
     .venueSection p {
         font-size: 1.5em;

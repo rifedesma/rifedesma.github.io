@@ -280,6 +280,10 @@ form .submit:hover {
     box-shadow: 2px 2px 5px #22333b;
 }
 
+.amenities {
+    font-size: 1em;
+}
+
 
 /*****************************************************************/
 
@@ -303,6 +307,16 @@ form .submit:hover {
 
 .venueSection p {
     font-size: 1em;
+}
+
+
+/*****************************************************************/
+
+
+/*Missionary*/
+
+#q {
+    text-align: center;
 }
 
 

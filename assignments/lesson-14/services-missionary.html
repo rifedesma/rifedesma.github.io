@@ -38,7 +38,45 @@
         </nav>
     </header>
     <main>
-
+        <div class="venueItems">
+            <div class="venueSection">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="images/familyhistorysmall.jpg">
+                    <source media="(min-width: 426px)" srcset="images/familyhistorylarge.jpg">
+                    <img src="images/familyhistorysmall.jpg" alt="Couple looking at a computer screen">
+                </picture>
+                <p> At Temple Inn and Suites we make a special effort to accomodate temple service missionaries who may need to join us for extended stays. Each location has a few laptops available for use in our spacious lobbies. There is also printing services
+                    available.
+                </p>
+            </div>
+            <div class="venueSection">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="images/washersmall.jpg">
+                    <source media="(min-width: 426px)" srcset="images/washerlarge.jpg">
+                    <img src="images/washersmall.jpg" alt="two washing machines">
+                </picture>
+                <p> There is a coin operated laundry facility on each floor of the hotel for your convience.
+                </p>
+            </div>
+            <div class="venueSection">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="images/elderlywomansmall.jpg">
+                    <source media="(min-width: 426px)" srcset="images/elderlywomanlarge.jpg">
+                    <img src="images/elderlywomansmall.jpg" alt="woman sitting up to a desk">
+                </picture>
+                <p> Our "kitchenette" suites are equiped with amenities for a longer stay, such as a stove, full size fridge/freezer, cabnit space, dishwasher, place settings for four people, two medium pots and two medium pans. You will also find a desk
+                    in each room perfect for scripture study or tending to any business.</p>
+            </div>
+        </div>
+        <h2 id="q">Contact Us With Any Questions</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <label>Full Name <input type="text" name="name" title="Five or more characters"  required> </label>
+                <label>Email <input type="email" name="email" placeholder="youremail@email.com"> </label>
+                <label>Enter Message <input type="text" name="comments"></label>
+                <input type="submit" value="Submit Comment" class="submit">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div class="contact">

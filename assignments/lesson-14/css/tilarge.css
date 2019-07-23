@@ -68,6 +68,9 @@
         .serviceItems figcaption {
             width: 298px;
         }
+        .amenities {
+            font-size: 1.5em;
+        }
         /*****************************************************************/
         /*Reception Venue*/
         .venueSection {
