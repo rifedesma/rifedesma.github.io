@@ -34,6 +34,9 @@
     .serviceItems figcaption {
         width: 298px;
     }
+    .venueSection p {
+        font-size: 1.5em;
+    }
 }
 
 

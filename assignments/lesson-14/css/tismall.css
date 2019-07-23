@@ -281,6 +281,31 @@ form .submit:hover {
 }
 
 
+/*****************************************************************/
+
+
+/*Reception Venue*/
+
+.venueItems {
+    padding: 20px;
+}
+
+.venueSection {
+    padding: 20px;
+    background-color: #22333b;
+    color: #f2f4f3;
+    text-align: center;
+}
+
+.venueSection img {
+    padding-right: 20px;
+}
+
+.venueSection p {
+    font-size: 1em;
+}
+
+
 /*---------------------------------------------------------------------------------------------------*/
 
 
