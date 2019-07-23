@@ -222,19 +222,30 @@ form fieldset {
 
 form label {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
 }
 
 form .submit {
     width: 160px;
+    height: 50px;
     background-color: #22333b;
     color: #f2f4f3;
     border: 1px solid #22333b;
     padding: 1em;
     border-radius: 5px;
     margin: 0 auto;
+    text-align: center;
 }
 
 form .submit:hover {
@@ -313,10 +324,50 @@ form .submit:hover {
 /*****************************************************************/
 
 
-/*Missionary*/
+/*Contact*/
+
+.contactUs {
+    margin-top: 20px;
+    background-color: #476a6f;
+    padding: 20px 50px 10px 0px;
+    color: #f2f4f3;
+    align-items: center;
+}
+
+iframe {
+    border: none;
+}
+
+.mapInfo {
+    padding-top: 20px;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contactInfo a {
+    color: #22333b;
+    font-size: 1em;
+}
+
+.contactInfo address {
+    color: #22333b;
+    font-size: 1em;
+}
 
 #q {
     text-align: center;
+    margin-bottom: -20px;
+}
+
+#comments {
+    height: 100px;
+}
+
+#contactSubmit:hover {
+    background-color: #f2f4f3;
+    color: #22333b;
 }
 
 
